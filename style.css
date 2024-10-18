@@ -1189,6 +1189,10 @@ button.swiper-pagination-bullet {
   background-image: url(./static/icon-close.svg);
   background-size: contain; }
 
+@media (max-width: 750px) {
+  .repair-lists {
+    flex-wrap: nowrap; } }
+
 @media (max-width: 500px) {
   .repair-lists__item {
     text-align: center; } }
@@ -1321,8 +1325,11 @@ button.swiper-pagination-bullet {
 > .price-services-table-descript__item:first-child::before {
   display: none;
   content: 'Ремонтные услуги';
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   position: absolute;
-  top: -20px;
+  top: -10px;
   left: 15px;
   color: #7e7e82; }
 
@@ -1330,8 +1337,11 @@ button.swiper-pagination-bullet {
 > .price-services-table-descript__item:last-child::before {
   display: none;
   content: 'Цена';
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   position: absolute;
-  top: -20px;
+  top: -10px;
   left: 15px;
   color: #7e7e82; }
 
@@ -1339,8 +1349,11 @@ button.swiper-pagination-bullet {
 > .price-services-table-descript__item:first-child::before {
   display: none;
   content: 'Срок';
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   position: absolute;
-  top: -20px;
+  top: -10px;
   left: 15px;
   color: #7e7e82; }
 
