@@ -966,11 +966,10 @@ button.swiper-pagination-bullet {
   z-index: 20;
   min-width: 300px;
   min-height: 100vh;
-  padding: 20px 5px 0px 10px;
-  box-shadow: 20px 0px 20px grey; }
+  padding: 20px 5px 20px 10px; }
 
 .asaid-wrrap {
-  display: none;
+  display: block;
   width: 100vw;
   padding-bottom: 20px;
   background-color: rgba(255, 255, 255, 0.8); }
@@ -1110,7 +1109,9 @@ button.swiper-pagination-bullet {
 
 @media (max-width: 1100px) {
   .asaid-wrrap {
-    display: none; }
+    display: none;
+    box-shadow: 20px 0px 20px #aba9a9;
+    max-width: 300px; }
   .asaid-hidden-mobile-menu {
     display: flex;
     position: absolute;
