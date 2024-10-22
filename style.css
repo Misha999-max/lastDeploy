@@ -998,7 +998,6 @@ button.swiper-pagination-bullet {
 
 .asaid-wrrap {
   display: block;
-  width: 100vw;
   padding-bottom: 20px;
   background-color: rgba(255, 255, 255, 0.8); }
 
@@ -1455,9 +1454,10 @@ button.swiper-pagination-bullet {
     gap: 20px; } }
 
 .footer {
-  margin-left: 325px;
+  margin-left: 300px;
   background-color: #f8f8f8;
-  padding: 10px; }
+  padding: 10px;
+  max-width: 80vw; }
 
 .footer-info {
   list-style-type: none;
