@@ -993,6 +993,7 @@ button.swiper-pagination-bullet {
   left: 0;
   z-index: 20;
   min-width: 300px;
+  max-width: 20vw;
   min-height: 100vh;
   padding: 20px 5px 20px 10px; }
 
@@ -1167,7 +1168,6 @@ button.swiper-pagination-bullet {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  padding: 10px;
   background-color: #f8f8f8; }
 
 .repair-lists__item {
@@ -1217,9 +1217,11 @@ button.swiper-pagination-bullet {
   background-image: url(./static/icon-close.svg);
   background-size: contain; }
 
-@media (max-width: 750px) {
+@media (max-width: 760px) {
   .repair-lists {
-    flex-wrap: nowrap; } }
+    flex-wrap: nowrap; }
+  .repair__btn-open {
+    display: none; } }
 
 @media (max-width: 500px) {
   .repair-lists__item {
@@ -1301,6 +1303,14 @@ button.swiper-pagination-bullet {
   height: 10px;
   background-image: url(./static/icon-close.svg);
   background-size: contain; }
+
+@media (max-width: 760px) {
+  .diferent-technics-lists {
+    gap: 0;
+    padding: 5px;
+    flex-wrap: nowrap; }
+  .diferent-technics__btn {
+    display: none; } }
 
 .price-services {
   background-color: #f8f8f8;
@@ -1479,7 +1489,8 @@ button.swiper-pagination-bullet {
 
 @media (max-width: 1100px) {
   .footer {
-    margin-left: 0; } }
+    margin-left: 0;
+    max-width: 100vw; } }
 
 @media (max-width: 5500px) {
   .footer-info {
@@ -1609,6 +1620,9 @@ textarea {
   src: url(./fonts/TTLakes-Regular.woff) format("woff");
   font-style: normal;
   font-weight: normal; }
+
+body {
+  margin: 0 auto; }
 
 * {
   font-family: 'TTLakes';
