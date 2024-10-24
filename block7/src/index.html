@@ -10,7 +10,605 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
-    <img src="./img/webpack.svg" alt="Webpack Logo" width="200px" />
-    <h3>Welcome to Webpack 4 starter </h3>
+    <!-- ------------------  CALL BACK ------------------ -->
+    <div class="pupup pupup-hidden">
+      <div class="pupup__btn-close">
+        <span class="first"></span>
+        <span class="second"></span>
+      </div>
+      <form action="#" class="pupup-call-back pupup-call-back__hidden">
+        <h3 class="pupup-title"> Обратная связь </h3>
+        <input type="text" placeholder="Имя" />
+        <input type="phone" placeholder="Телефон" />
+        <input type="email" placeholder="Электронная почта" />
+        <textarea name="text" placeholder="Сообщение"></textarea>
+        <p class="pupup__info"
+          >Нажимая “отправить”, вы даете согласие на
+          <span> обработку персональных данных</span> и соглашаетесь с нашей
+          <span>политикой конфиденциальности</span></p
+        >
+        <button class="pupup__btn">ОТПРАВИТЬ <span>></span></button>
+      </form>
+      <form action="#" class="pupup-get-call pupup-get-call__hidden">
+        <h3 class="pupup-title"> Заказать звонок </h3>
+        <input type="phone" placeholder="Телефон" />
+        <p class="pupup__info"
+          >Нажимая “отправить”, вы даете согласие на
+          <span> обработку персональных данных</span> и соглашаетесь с нашей
+          <span>политикой конфиденциальности</span></p
+        >
+        <button class="pupup__btn">ОТПРАВИТЬ <span>></span></button>
+      </form>
+    </div>
+
+    <!-- ------------------ END CALL BACK ------------------ -->
+
+    <header class="menu">
+      <div class="menu-left">
+        <button class="menu-left__btn">
+          <img class="menu-left__img" src="./img/img/burger.svg" alt="menu" />
+        </button>
+        <a href="#" class="menu-left__icon">
+          <img class="menu-left__img" src="./img/img/Group.png" alt="logo" />
+        </a>
+      </div>
+
+      <div class="menu-right">
+        <ul class="menu-right-tablet">
+          <li class="menu-right-tablet__item">
+            <button class="menu-right-tablet__btn">
+              <img
+                class="menu-right-tablet__img"
+                src="./img/img/call.svg"
+                alt="phone"
+              />
+            </button>
+          </li>
+          <li class="menu-right-tablet__item">
+            <button class="menu-right-tablet__btn">
+              <img
+                class="menu-right-tablet__img"
+                src="./img/img/chat.svg"
+                alt="chat"
+              />
+            </button>
+          </li>
+
+          <li class="menu-right-tablet__item">
+            <button class="menu-right-tablet__btn">
+              <img
+                class="menu-right-tablet__img"
+                src="./img/img/profile.svg"
+                alt="profile"
+              />
+            </button>
+          </li>
+        </ul>
+
+        <div class="menu-right-divider"></div>
+
+        <ul class="menu-right-search">
+          <li class="menu-right-search__item">
+            <button
+              class="menu-right-search__btn menu-right-search__btn-call-back"
+            >
+              <img
+                class="menu-right-search__img"
+                src="./img/img/repair.svg"
+                alt=""
+              />
+            </button>
+          </li>
+          <li>
+            <button
+              class="menu-right-search__btn menu-right-search__btn-get-call"
+            >
+              <img
+                class="menu-right-search__img"
+                src="./img/img/checkstatus.svg"
+                alt=""
+              />
+            </button>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- -------------------- ASAID BAR--------------------------- -->
+
+      <aside class="asaid-wrrap">
+        <div class="asaid">
+          <header class="asaid-top">
+            <div class="asaid-top-left">
+              <button class="asaid-top-left__button">
+                <img
+                  class="asaid-top-left__img"
+                  src="./img/img/burger.svg"
+                  alt="burger"
+                />
+              </button>
+              <a class="asaid-top-left__link">
+                <img
+                  class="asaid-top-left__img"
+                  src="./img/img/Group.png"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="asaid-top-right">
+              <button class="asaid-top-right__btn button">
+                <img
+                  class="asaid-top-right__img"
+                  src="./img/img/search.svg"
+                  alt=""
+                />
+              </button>
+            </div>
+          </header>
+          <nav class="asaid-menu">
+            <ul class="asaid-menu-lits">
+              <li class="asaid-menu__item">
+                <a class="asaid-menu__link" href="#">Ремонт техники</a>
+              </li>
+              <li class="asaid-menu__item">
+                <a class="asaid-menu__link" href="#">Услуги и сервисы</a>
+              </li>
+              <li class="asaid-menu__item">
+                <a class="asaid-menu__link" href="#">Корпоративным клиентам</a>
+              </li>
+              <li class="asaid-menu__item">
+                <a class="asaid-menu__link" href="#">Продавцам техники</a>
+              </li>
+              <li class="asaid-menu__item">
+                <a class="asaid-menu__link" href="#">Партнерам</a>
+              </li>
+              <li class="asaid-menu__item">
+                <a class="asaid-menu__link" href="#">Производителям</a>
+              </li>
+              <li class="asaid-menu__item">
+                <a class="asaid-menu__link" href="#">Наши сервисные центры</a>
+              </li>
+              <li class="asaid-menu__item">
+                <a class="asaid-menu__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <footer class="asaid-footer">
+            <ul class="asaid-footer-icon">
+              <li class="asaid-footer-icon__list">
+                <button class="asaid-footer-icon__button">
+                  <img
+                    class="asaid-footer-icon__img"
+                    src="./img/img/call.svg"
+                    alt=""
+                  />
+                </button>
+              </li>
+              <li class="asaid-footer-icon__list">
+                <button class="asaid-footer-icon__button">
+                  <img
+                    class="asaid-footer-icon__img"
+                    src="./img/img/chat.svg"
+                    alt=""
+                  />
+                </button>
+              </li>
+
+              <li class="asaid-footer-icon__list">
+                <button class="asaid-footer-icon__button">
+                  <img class="img" src="./img/img/profile.svg" alt="" />
+                </button>
+              </li>
+            </ul>
+            <address class="asaid-footer-info">
+              <a href="mailto:mail@cps.com" class="asaid-footer-info__mail"
+                >mail@cps.com</a
+              >
+
+              <a href="tel:88008908900" class="asaid-footer-info__phone"
+                >8 800 890 8900</a
+              >
+            </address>
+
+            <ul class="asaid-footer-langs">
+              <li class="asaid-footer-langs__item">
+                <a
+                  class="asaid-footer-langs__link asaid-footer-langs__link-active"
+                  href="#"
+                  >RU</a
+                >
+              </li>
+              <li class="asaid-footer-langs__item">
+                <a class="asaid-footer-langs__link" href="#">EN</a>
+              </li>
+              <li class="asaid-footer-langs__item">
+                <a class="asaid-footer-langs__link" href="#">CH</a>
+              </li>
+            </ul>
+          </footer>
+        </div>
+      </aside>
+
+      <!-- ----------------- END ASAID BAR ---------------------------- -->
+      <div class="wrapp-content">
+        <section class="services">
+          <div class="services-top">
+            <div class="services-top-info">
+              <h1 class="services-top-info__title">Услуги и сервисы</h1>
+              <div class="services-top-info-wrrap">
+                <div
+                  class="services-top-info-order-on services-top-info-order-on__call-back"
+                >
+                  <a class="services-top-info-order-on__link" href="#"
+                    >Оставить заявку</a
+                  >
+                  <img
+                    class="services-top-info-order-on__img"
+                    src="./img/img/repair.svg"
+                    alt="icon"
+                  />
+                </div>
+                <div
+                  class="services-top-info-order-on services-top-info-order-on__get-call"
+                >
+                  <a class="services-top-info-order-on__link" href="#"
+                    >Статус ремонта</a
+                  >
+                  <img
+                    class="services-top-info-order-on__img"
+                    src="./img/img/checkstatus.svg"
+                    alt="icon"
+                  />
+                </div>
+              </div>
+            </div>
+            <nav>
+              <ul class="services-top-nav">
+                <li class="services-top-nav__list">
+                  <a class="services-top-nav__link" href="#"
+                    >Ремонтируемые бренды</a
+                  >
+                </li>
+                <li class="services-top-nav__list">
+                  <a class="services-top-nav__link" href="#"
+                    >Ремонтируемые устройства</a
+                  >
+                </li>
+                <li class="services-top-nav__list">
+                  <a class="services-top-nav__link" href="#">Цены на услуги</a>
+                </li>
+                <li class="services-top-nav__list">
+                  <a class="services-top-nav__link" href="#"
+                    >Адреса сервисных центров</a
+                  >
+                </li>
+                <li class="services-top-nav__list">
+                  <a class="services-top-nav__link" href="#"
+                    >Специальные цены</a
+                  >
+                </li>
+                <li class="services-top-nav__list">
+                  <a class="services-top-nav__link" href="#">Отзывы</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="services__description">
+            <div class="services__description-text">
+              <p class="services__description-text-item1">
+                Мы являемся авторизованным сервисным центром по ремонту техники
+                Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+                официальной гарантией производителя.
+              </p>
+              <p class="services__description-text-item2">
+                Мы успешно работаем с 1992 года и заслужили репутацию надежного
+                партнера, что подтверждает большое количество постоянных
+                клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
+                и, в свою очередь, советуют нас родным и близким.
+              </p>
+              <button class="services__description-text__btn"
+                >Читать далее</button
+              >
+            </div>
+            <div class="services__description--img">
+              <img src="./img/img/cps_foto.jpg" alt="cps_foto" />
+            </div>
+          </div>
+        </section>
+
+        <!--  -------------  SECTION BRANDS ----------------------------------------- -->
+        <section class="repair">
+          <h2 class="repair__desc">Ремонт техники различных брендов</h2>
+          <div class="tablet-slider">
+            <ul class="swiper-wrapper repair-lists repair__lists-hidden">
+              <li class="repair-lists__item">
+                <a class="repair-lists__link" href="#">
+                  <img
+                    class="repair-lists__img"
+                    src="./img/img/lenovo.png"
+                    alt=""
+                /></a>
+              </li>
+              <li class="repair-lists__item">
+                <a class="repair-lists__link" href="#"
+                  ><img
+                    class="repair-lists__img"
+                    src="./img/img/samsung.png"
+                    alt=""
+                /></a>
+              </li>
+              <li class="repair-lists__item">
+                <a class="repair-lists__link" href="#"
+                  ><img
+                    class="repair-lists__img"
+                    src="./img/img/apple.png"
+                    alt=""
+                /></a>
+              </li>
+              <li class="repair-lists__item">
+                <a class="repair-lists__link" href="#"
+                  ><img class="repair-lists__img" src="./img/img/VS.png" alt=""
+                /></a>
+              </li>
+              <li class="repair-lists__item">
+                <a class="repair-lists__link" href="#"
+                  ><img
+                    class="repair-lists__img"
+                    src="./img/img/bosch.png"
+                    alt=""
+                /></a>
+              </li>
+              <li class="repair-lists__item">
+                <a class="repair-lists__link" href="#">
+                  <img class="repair-lists__img" src="./img/img/HP.png" alt=""
+                /></a>
+              </li>
+              <li class="repair-lists__item">
+                <a class="repair-lists__link" href="#"
+                  ><img
+                    class="repair-lists__img"
+                    src="./img/img/acer.png"
+                    alt=""
+                /></a>
+              </li>
+              <li class="repair-lists__item">
+                <a class="repair-lists__link" href="#"
+                  ><img
+                    class="repair-lists__img"
+                    src="./img/img/sony.png"
+                    alt=""
+                /></a>
+              </li>
+              <li class="repair-lists__item">
+                <a class="repair-lists__link" href="#"
+                  ><img
+                    class="repair-lists__img"
+                    src="./img/img/lenovo.png"
+                    alt=""
+                /></a>
+              </li>
+              <li class="repair-lists__item">
+                <a class="repair-lists__link" href="#"
+                  ><img
+                    class="repair-lists__img"
+                    src="./img/img/apple.png"
+                    alt=""
+                /></a>
+              </li>
+              <li class="repair-lists__item">
+                <a class="repair-lists__link" href="#"
+                  ><img
+                    class="repair-lists__img"
+                    src="./img/img/samsung.png"
+                    alt=""
+                /></a>
+              </li>
+            </ul>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+          <button class="repair__btn-open">Показать все</button>
+        </section>
+
+        <!-- ------------------   END SECTION BANDS ---------------------------- -->
+
+        <!--  -------------------- SECTION DIFeReNT technics ---------------------- -->
+
+        <section class="diferent-technics">
+          <h2 class="repair__desc">Ремонт различных видов техники</h2>
+          <div class="tablet-slider">
+            <ul
+              class="swiper-wrapper diferent-technics-lists diferent-technics-lists__hidden"
+            >
+              <li class="diferent-technics-lists__item">
+                <p class="diferent-technics-lists__title">Ремонт ноутбуков </p>
+                <button class="diferent-technics-btn"
+                  ><img src="./img/img/go.svg" alt="go-to"
+                /></button>
+              </li>
+              <li class="diferent-technics-lists__item">
+                <p class="diferent-technics-lists__title">Ремонт планшетов</p>
+                <button class="diferent-technics-btn"
+                  ><img src="./img/img/go.svg" alt="go-to"
+                /></button>
+              </li>
+              <li class="diferent-technics-lists__item">
+                <p class="diferent-technics-lists__title">Ремонт ПК</p>
+                <button class="diferent-technics-btn"
+                  ><img src="./img/img/go.svg" alt="go-to"
+                /></button>
+              </li>
+              <li class="diferent-technics-lists__item">
+                <p class="diferent-technics-lists__title">Ремонт мониторов</p>
+                <button class="diferent-technics-btn"
+                  ><img src="./img/img/go.svg" alt="go-to"
+                /></button>
+              </li>
+              <li class="diferent-technics-lists__item">
+                <p class="diferent-technics-lists__title">Ремонт ПК</p>
+                <button class="diferent-technics-btn"
+                  ><img src="./img/img/go.svg" alt="go-to"
+                /></button>
+              </li>
+              <li class="diferent-technics-lists__item">
+                <p class="diferent-technics-lists__title">Ремонт мониторов</p>
+                <button class="diferent-technics-btn"
+                  ><img src="./img/img/go.svg" alt="go-to"
+                /></button>
+              </li>
+              <li class="diferent-technics-lists__item">
+                <p class="diferent-technics-lists__title">Ремонт ПК</p>
+                <button class="diferent-technics-btn"
+                  ><img src="./img/img/go.svg" alt="go-to"
+                /></button>
+              </li>
+              <li class="diferent-technics-lists__item">
+                <p class="diferent-technics-lists__title">Ремонт мониторов</p>
+                <button class="diferent-technics-btn"
+                  ><img src="./img/img/go.svg" alt="go-to"
+                /></button>
+              </li>
+            </ul>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <button class="diferent-technics__btn">Показать все</button>
+        </section>
+
+        <!-- ------------------------------- END SECTION DIFeReNT technics ----------- -->
+
+        <!-- -------------------   PRICE AND SERVICES ----------------------- -->
+
+        <section class="price-services">
+          <h2 class="repair__desc">цены на услуги</h2>
+          <div class="tablet-slider">
+            <ul class="price-services-table price-services__slider">
+              <li class="price-services-table-title">
+                <div
+                  class="price-services-table-title-left price-services-table-title-left__top"
+                >
+                  <p class="price-services-table-title__desc"
+                    >Ремонтные услуги</p
+                  >
+                  <p class="price-services-table-title__desc">Цена</p>
+                </div>
+                <div
+                  class="price-services-table-title-right price-services-table-title-right__top"
+                >
+                  <p class="price-services-table-title__desc">Срок</p>
+                </div>
+              </li>
+              <li class="price-services-table-descript">
+                <div class="price-services-table-title-left">
+                  <p class="price-services-table-descript__item">Диагностика</p>
+                  <p class="price-services-table-descript__item">Бесплатно</p>
+                </div>
+                <div class="price-services-table-title-right">
+                  <p class="price-services-table-descript__item">30 мин</p>
+                  <p class="price-services-table-descript__item"
+                    ><button class="price-services-table-descript__btn"
+                      >Заказать<span>></span></button
+                    ></p
+                  >
+                </div>
+              </li>
+              <li class="price-services-table-descript">
+                <div class="price-services-table-title-left">
+                  <p class="price-services-table-descript__item"
+                    >Замена дисплея</p
+                  >
+                  <p class="price-services-table-descript__item">1 000 ₽</p>
+                </div>
+                <div class="price-services-table-title-right">
+                  <p class="price-services-table-descript__item">30-120 мин</p>
+                  <p class="price-services-table-descript__item"
+                    ><button class="price-services-table-descript__btn"
+                      >Заказать<span>></span></button
+                    ></p
+                  >
+                </div>
+              </li>
+              <li class="price-services-table-descript">
+                <div class="price-services-table-title-left">
+                  <p class="price-services-table-descript__item"
+                    >Замена полифонического динамика</p
+                  >
+                  <p class="price-services-table-descript__item">1 000 ₽</p>
+                </div>
+                <div class="price-services-table-title-right">
+                  <p class="price-services-table-descript__item">30-120 мин</p>
+                  <p class="price-services-table-descript__item"
+                    ><button class="price-services-table-descript__btn"
+                      >Заказать<span>></span></button
+                    ></p
+                  >
+                </div>
+              </li>
+              <li class="price-services-table-descript">
+                <div class="price-services-table-title-left">
+                  <p class="price-services-table-descript__item"
+                    >Тестирование с выдачей технического заключения</p
+                  >
+                  <p class="price-services-table-descript__item">1 000 ₽</p>
+                </div>
+                <div class="price-services-table-title-right">
+                  <p class="price-services-table-descript__item">30-120 мин</p>
+                  <p class="price-services-table-descript__item"
+                    ><button class="price-services-table-descript__btn"
+                      >Заказать<span>></span></button
+                    ></p
+                  >
+                </div>
+              </li>
+              <li class="price-services-table-descript">
+                <div class="price-services-table-title-left">
+                  <p class="price-services-table-descript__item"
+                    >Замена программного обеспечения</p
+                  >
+                  <p class="price-services-table-descript__item">1 000 ₽</p>
+                </div>
+                <div class="price-services-table-title-right">
+                  <p class="price-services-table-descript__item">30-120 мин</p>
+                  <p class="price-services-table-descript__item"
+                    ><button class="price-services-table-descript__btn"
+                      >Заказать<span>></span></button
+                    ></p
+                  >
+                </div>
+              </li>
+            </ul>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <p class="price-services__info"
+            >Все цены указаны с учетом НДС. Стоимость ремонта указана на
+            единичную услугу. Для получения коммерческого предложения на
+            постоянное обслуживание, оставьте заявку.</p
+          >
+
+          <a class="price-services__link" href="#"
+            >Получить коммерческое предложение <span>></span></a
+          >
+        </section>
+
+        <!-- -------------------  END PRICE AND SERVICES ----------------------- -->
+      </div>
+    </main>
+    <footer class="footer">
+      <ul class="footer-info">
+        <li class="footer-info__item">
+          © 2019 CPS Разработано командой Apesong
+        </li>
+        <li class="footer-info__item"> Политика конфиденциальности </li>
+        <li class="footer-info__item">
+          Информация, размещенная на данной странице, не является публичной
+          офертой
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
