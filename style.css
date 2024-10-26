@@ -1224,8 +1224,12 @@ button.swiper-pagination-bullet {
     display: none; } }
 
 @media (max-width: 500px) {
+  .repair-lists {
+    width: 100%; }
   .repair-lists__item {
-    text-align: center; } }
+    text-align: center;
+    width: 100%;
+    margin-right: 10px; } }
 
 .diferent-technics {
   background-color: #f8f8f8; }
@@ -1632,12 +1636,12 @@ body {
 
 .swiper {
   max-width: 500px;
-  max-height: 380px; }
+  max-height: auto; }
 
 .swiper-slide {
   text-align: center;
   width: 100%;
-  height: 250px;
+  height: auto;
   font-size: 18px;
   background: #fff; }
 
@@ -1661,7 +1665,9 @@ body {
 @media (max-width: 500px) {
   .swiper-pagination {
     text-align: left;
-    margin-left: 30px; } }
+    margin-left: 30px; }
+  .swiper-slide {
+    text-align: left; } }
 
 
 /*# sourceMappingURL=style.css.map*/
