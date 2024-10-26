@@ -1226,9 +1226,12 @@ button.swiper-pagination-bullet {
     display: none; } }
 
 @media (max-width: 500px) {
+  .repair-lists {
+    padding-left: 40px; }
   .repair-lists__item {
-    text-align: left;
-    max-width: 300px; }
+    text-align: right;
+    max-width: 300px;
+    margin-left: 10px; }
   .repair-lists__img {
     display: block;
     max-width: 300px;
