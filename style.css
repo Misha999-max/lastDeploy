@@ -1166,11 +1166,13 @@ button.swiper-pagination-bullet {
 .repair-lists {
   list-style-type: none;
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
   background-color: #f8f8f8; }
 
 .repair-lists__item {
+  margin-right: 10px;
   padding: 5px;
   transition: all 0.3s ease;
   border-radius: 10px; }
@@ -1224,16 +1226,12 @@ button.swiper-pagination-bullet {
     display: none; } }
 
 @media (max-width: 500px) {
-  .repair-lists {
-    width: 100%; }
   .repair-lists__item {
-    text-align: center;
-    width: 100vw;
-    margin-right: 10px; }
+    text-align: left;
+    max-width: 300px; }
   .repair-lists__img {
-    display: inline-block;
-    max-width: 100%;
-    margin: 0px;
+    display: block;
+    max-width: 300px;
     padding-top: 0%; } }
 
 .diferent-technics {
@@ -1663,7 +1661,7 @@ body {
 
 /* добавляем стили для пагинации */
 .swiper-pagination {
-  padding-top: 30px !important;
+  position: static;
   width: 100%;
   text-align: center; }
 
