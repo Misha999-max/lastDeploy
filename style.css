@@ -1228,8 +1228,13 @@ button.swiper-pagination-bullet {
     width: 100%; }
   .repair-lists__item {
     text-align: center;
-    width: 100%;
-    margin-right: 10px; } }
+    width: 100vw;
+    margin-right: 10px; }
+  .repair-lists__img {
+    display: inline-block;
+    max-width: 100%;
+    margin: 0px;
+    padding-top: 0%; } }
 
 .diferent-technics {
   background-color: #f8f8f8; }
